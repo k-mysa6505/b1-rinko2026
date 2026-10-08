@@ -1,0 +1,10 @@
+services:
+  lab:
+    image: ghcr.io/k-mysa6505/b1-rinko2026:latest
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/workspace/notebooks
+      - ./weights:/weights:ro
+      - ./src:/workspace/src:ro

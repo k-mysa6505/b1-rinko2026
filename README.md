@@ -4,9 +4,7 @@ CPUだけで動く演習環境です．Windows / Mac（Apple Silicon含む）で
 
 ## 必要なメモリ
 
-Docker Desktop（WindowsではWSL 2を含む）が **4 GiB以上** のメモリを利用できる状態を推奨します．ホストPCのメモリは8 GiB以上が目安です．
-
-Grounding DINO TinyをCPUで実測したところ，モデルの読み込み後は約0.6 GiB，640×480の画像1枚を短辺800 pxにリサイズして推論したときのピークは約2.3 GiBでした．2 GiB制限では余裕がなく，1 GiB制限では推論が完了しなかったため，JupyterLabの使用分と画像サイズの違いを考慮して4 GiBを推奨値としています．測定時は勾配計算を無効にした推論モードを使用しています．
+PCのメモリは **8 GiB以上**，Docker Desktop（WindowsではWSL 2を含む）が利用できるメモリは **4 GiB以上** を目安とします．
 
 ## 事前準備（当日までに）
 

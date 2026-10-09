@@ -2,6 +2,10 @@
 
 CPUだけで動く演習環境です．Windows / Mac（Apple Silicon含む）で同じ手順になります．
 
+## 必要なメモリ
+
+PCのメモリは **8 GiB以上**，Docker Desktop（WindowsではWSL 2を含む）が利用できるメモリは **4 GiB以上** を目安とします．
+
 ## 事前準備（当日までに）
 
 1. Docker Desktop をインストール．
